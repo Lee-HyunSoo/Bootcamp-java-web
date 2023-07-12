@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="testjs.js"></script>
+
+</head>
+
+<body>
+	<!-- 이벤트 발생에는 javascript가 필요하다 -->
+	<input type="button" value="이벤트 발생" onclick="test()"/><br><br>
+
+
+	<form action="/test" method="get">
+		<!-- 한줄짜리 입력 -->
+		<!-- name이라는 속성값이 있어야 servlet에서 꺼내 쓸 수 있다. 즉, 파라미터 명이다 -->
+		<input type="text" placeholder="이름입력" required name="name" /> <br/>
+		<input type="email" placeholder="xxx@xxx.xxx" required /> <br/>
+		<input type="url" placeholder="http://~~" required /> <br/><br/>
+		
+		<!-- checkbox : 다중 선택 가능 -->
+		<input type="checkbox" /> JAVA <br/>
+		<input type="checkbox" /> WEB <br/><br/>
+		
+		<!-- radio : 다중 선택 불가 -->
+		<input type="radio" name="r"/> 남자 <br/>
+		<input type="radio" name="r"/> 여자 <br/><br/>
+		
+		<!-- radio : 다중 선택 불가 -->
+		<input type="radio" name="r1"/> SKT <br/>
+		<input type="radio" name="r1"/> LGU <br/>
+		<input type="radio" name="r1"/> KT <br/><br/>
+		
+		<!-- 날짜 표기 -->
+		<input type="date" /> <br/>
+		<input type="datetime" /> <br/> <!-- chrome에선 아직 지원 x -->
+		<input type="datetime-local" /> <br/><br/> 
+		
+		<!-- pw 입력 -->
+		<input type="password" /> <br/><br/> 
+		
+		<!-- button -->
+		<input type="button" value="일반버튼"/> <br>
+		<button>일반버튼</button> <br><br>
+
+		<!-- text 입력칸 -->		
+		<textarea rows="5" cols="100"></textarea> <br><br>
+		
+		<!-- 기본값이 있는 text type -->		
+		<input type="text" value="준회원" readonly="readonly"></input> <br><br>
+
+		<!-- color, hidden area -->			
+		<input type="color"><br/>
+		<input type="hidden" /> <br/> 
+		
+		<!-- 선택창 -->
+		<select>
+			<option>Java</option>
+			<option>MySQL</option>
+			<option>Servlet</option>
+			<option>JSP</option>
+		</select><br/><br/>	
+		
+		<!-- 선택창 크기 2 -->
+		<select size="2">
+			<option>Java</option>
+			<option>MySQL</option>
+			<option>Servlet</option>
+			<option>JSP</option>
+		</select><br/><br/>
+		
+		<!-- multiple이 붙으면 쉬프트 클릭으로 다중선택이 가능해진다 -->
+		<select size="4" multiple="multiple">
+			<option>Java</option>
+			<option>MySQL</option>
+			<option>Servlet</option>
+			<option>JSP</option>
+		</select><br/><br/>
+		
+		<!-- 전송 버튼 -->
+		<input type="submit" value="전송" />
+		<input type="reset" value="취소"/> <!-- input 값들 초기화 -->
+	</form>
+</body>
+</html>
