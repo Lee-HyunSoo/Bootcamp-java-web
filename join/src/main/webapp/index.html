@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 화면</title>
+</head>
+<body>
+	<!-- get : 웹 주소줄에 데이터가 출력이 되어 위험에 노출될 확률이 높다. -->
+	<!-- post : 웹 주소줄에 데이터가 출력이 안되어 위험성이 덜하다. -->
+	<form action="log" method="post">
+		<!-- label tag는 특정 기능이 없다. 글씨를 보여주는 역할만 한다. -->
+		<label>아이디</label><input type="text" name="id" required /> <br />
+		<label>비밀번호</label><input type="password" name="pw" required /> <br />
+		<input type="submit" value="전송" />
+		<input type="reset" value="입력취소" />
+	</form>
+</body>
+</html>
