@@ -18,6 +18,8 @@ public class LogCheck extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(5);
+		
 		if (id.equals(request.getParameter("ID")) && pw.equals(request.getParameter("PW"))) {
 			session.setAttribute("user", name);
 			response.sendRedirect("main.jsp");
