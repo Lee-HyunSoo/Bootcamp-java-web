@@ -34,7 +34,7 @@
                 <div class="summary">
                     <h2 class="summary__title">
                         <!-- &nbsp;를 통해 두 단어를 연결, but 사이에 띄어쓰기는 존재, 결과적으로 긴 단어를 만들어 화면에 표시될 때 자연스럽게 줄바꿈 유도 -->
-<!--                         How people build&nbsp;software --><br>
+<!--                         How people build&nbsp;software --><br><br><br>
                     </h2>
                     <p class="summary__description">
                         <!-- br 태그를 쓰면 반응형을 추가했을때 줄이 자연스럽게 바뀌질 않음 -->
